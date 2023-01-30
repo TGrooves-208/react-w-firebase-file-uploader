@@ -1,0 +1,24 @@
+.App {
+  width: 100vw;
+  text-align: center;
+  align-items: center;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 700px;
+  margin: 10px;
+  border: 3px solid black;
+}
+
+button {
+  align-items: center;
+  padding-top: 5px;
+}
+
+input {
+  padding-bottom: 5px;
+  align-items: center;
+}
