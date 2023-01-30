@@ -99,6 +99,11 @@ We aren't deleting files here as we can do that inside of Google Firebase, this 
 Project up and running in the browser
 ![firebase-project-screen-shot](https://user-images.githubusercontent.com/5911897/215368932-ad39c859-aa18-461f-b6bf-63920f8463ee.PNG)
 
+___
+Accessibility check to ensure we are following guide lines set by [WCAG Documentation](https://www.w3.org/WAI/standards-guidelines/wcag/)
+![accessbility-check-no-issues-pokemon-api](https://user-images.githubusercontent.com/5911897/215369696-7f5049aa-16b2-4519-9bfa-dd87db5623a7.PNG)
+
+
 
 
 
