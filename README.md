@@ -31,25 +31,27 @@ ___
 ## Google Firebase configuration setup
 Google Firebase Storage
 To use storage we wil click on the left side bar and look for the `Build` option. This will expand a list of options. Focusing on the Storage option, click on the option and the dashboard for storage is given which should looko similar to the image below. 
-<b>Google Firebase Workflow</b>
+
+Google Firebase Workflow
 ![file-uploader-w-firebase](https://user-images.githubusercontent.com/5911897/215367857-afa563c7-ba09-4ed6-9c1b-873bc55d657d.PNG)
 
 ___
 
 We need to set the permissions using the production options as the choice (you can use test if you like) and then select the appropriate region that is nearest to you.
 This will take a bit to spin up for us and once this has successfully completed we are taken to a new view with other options.
-<b>Creating a new Firebase Project</b>
+Creating a new Firebase Project
 ![firebase-project-screen-shot](https://user-images.githubusercontent.com/5911897/215367950-6387d8fb-bd6a-47b4-adcb-0ea121104578.PNG)
 
 ___
+
 Selecting storage permissions
-<b>Storage Permissions</b>
 ![uploader-storage-permissions](https://user-images.githubusercontent.com/5911897/215368012-4de2bb53-17b3-4938-927b-ac6f5ba90ad2.PNG)
 
 ___
+
 Selectiong Cloud Storage location
 Looking at the second option for `Rules` we will need to change line 5 from `false` to `true`. What this is accomplishing is the ability to allow third party apis to be called to store files for an authenticated user. Clicking on Publish to complete this change. I am using `us-west2` as my choice. 
-<b>Selecting Storage Location</b>
+Selecting Storage Location
 ![uploader-cloud-storage-location-setting](https://user-images.githubusercontent.com/5911897/215368058-9000b489-dd5c-4ef9-af86-3e331fe6849f.PNG)
 
 Now that we have that set above let’s just make sure that we know what is occurring behind the scenes.
@@ -60,6 +62,7 @@ After the Cloud storage has been created for us the rule set needs to be updated
 This allows for authenticated users being able to read and write files to storage
 
 ___
+
 We will need to create a new Google Firebase file at the root of our prject or where you feel makes the most sense. 
 In that file it should look something similar to this once you have published your newly created project. 
 ```import { initializeApp } from "firebase/app";
@@ -81,7 +84,7 @@ export const storage = getStorage(app)
 ```
 ___
 
-<b>Hiding our API Key</b>
+Hiding our API Key
 We need to create a git init file for our project and in this file set the defaults. In our project we can do one of the following:
 - Import the package for dotenv and then add a new const in that file
 - We will then have to require that file to be used inside of the Firebase js file
@@ -89,9 +92,11 @@ We need to create a git init file for our project and in this file set the defau
 We can also just do the easier thing to just add the `firebase.js` file to our `gitignore` file save and then in the left side of our file structure it will be light grey and we are good to go. 
 
 ___
+
 Start your dev server with the project and it should look something like this but different with images that were chosen for upload by you. 
 We aren't deleting files here as we can do that inside of Google Firebase, this was just a quick and dirty aproach to working with Google Firebase hopefully you like it cheers and happy coding. 
-<b>Project up and running in the browser</b>
+
+Project up and running in the browser
 ![firebase-project-screen-shot](https://user-images.githubusercontent.com/5911897/215368932-ad39c859-aa18-461f-b6bf-63920f8463ee.PNG)
 
 
