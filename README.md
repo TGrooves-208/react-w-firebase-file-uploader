@@ -101,8 +101,8 @@ Project up and running in the browser
 
 ___
 Accessibility check to ensure we are following guide lines set by [WCAG Documentation](https://www.w3.org/WAI/standards-guidelines/wcag/)
-![accessbility-check-no-issues-pokemon-api](https://user-images.githubusercontent.com/5911897/215369696-7f5049aa-16b2-4519-9bfa-dd87db5623a7.PNG)
 
+![react-file-upload-a11y-test-results](https://user-images.githubusercontent.com/5911897/215369868-e0f677dd-9d1b-4898-b65e-c60ab620e588.PNG)
 
 
 
